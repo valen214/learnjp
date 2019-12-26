@@ -1,0 +1,21 @@
+.app-top-nav {
+  width: 100%;
+  height: 56px;
+  background: #aaf;
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.top-nav-link {
+  display: inline-block;
+  padding: 15px;
+}
+.top-nav-link:visited {
+  color: white;
+}
+
+.router-link-active {
+  color: yellow;
+}
