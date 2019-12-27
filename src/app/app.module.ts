@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { TopNavComponent } from './top-nav/top-nav.component';
 import { HomeComponent } from './home/home.component';
 import { VocabComponent } from './vocab/vocab.component';
+import { KanaTableComponent } from './kana-table/kana-table.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { VocabComponent } from './vocab/vocab.component';
       AppComponent,
       TopNavComponent,
       HomeComponent,
-      VocabComponent
+      VocabComponent,
+      KanaTableComponent
    ],
    imports: [
       BrowserModule,

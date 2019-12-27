@@ -12,10 +12,13 @@
   display: inline-block;
   padding: 15px;
 }
+.top-nav-link:active {
+  color: #ada;
+}
 .top-nav-link:visited {
   color: white;
 }
 
 .router-link-active {
-  color: yellow;
+  color: #faa !important;
 }

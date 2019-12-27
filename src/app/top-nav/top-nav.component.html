@@ -1,7 +1,6 @@
 <div class="app-top-nav">
-  <a [routerLink]="['/home']" routerLinkActive="router-link-active"
-      [routerLinkActiveOptions]="{ exact: true }"
-      class="top-nav-link">Home</a>
-  <a [routerLink]="['/vocab']" routerLinkActive="router-link-active"
-      class="top-nav-link" >vocab</a>
+  <a [routerLink]="['/home']" routerLinkActive #rla="routerLinkActive"
+      [ngClass]="{ 'top-nav-link': true, 'router-link-active': rla.isActive }">Home</a>
+  <a [routerLink]="['/vocab']" routerLinkActive #rla="routerLinkActive"
+      [ngClass]="{ 'top-nav-link': true, 'router-link-active': rla.isActive }">vocab</a>
 </div>
