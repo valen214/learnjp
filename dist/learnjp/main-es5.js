@@ -1197,7 +1197,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _createClass(KanaTableService, [{
         key: "getKanaData",
         value: function getKanaData() {
-          var kana = this.http.get("/assets/kana.json", {
+          var kana = this.http.get("./assets/kana.json", {
             responseType: "json"
           });
           console.log(kana);

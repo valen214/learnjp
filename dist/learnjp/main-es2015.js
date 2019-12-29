@@ -608,7 +608,7 @@ let KanaTableService = class KanaTableService {
         this.kana = {};
     }
     getKanaData() {
-        let kana = this.http.get("/assets/kana.json", {
+        let kana = this.http.get("./assets/kana.json", {
             responseType: "json"
         });
         console.log(kana);
