@@ -1,3 +1,15 @@
-<div>
-  
+
+<h3>Kana Table</h3>
+<div class="kana-table" *ngIf="kana | async as table">
+  <span class="consonant-column"
+      *ngFor="let consonant of Object.keys(table).reverse()">
+    <span class="vowel-row">{{ consonant }}</span>
+    <span class="vowel-row"
+        *ngFor="let vowel of 'aiueo'.split('')">
+      <ng-container *ngIf="table[consonant][vowel]?.Seion as entry">
+        {{ entry.Hiragana }}
+        {{ entry.Katakana }}
+      </ng-container>
+    </span>
+  </span>
 </div>
