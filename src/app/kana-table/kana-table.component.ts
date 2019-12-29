@@ -7,8 +7,7 @@ import { KanaTableService } from './kana-table.service';
   styleUrls: ['./kana-table.component.css']
 })
 export class KanaTableComponent implements OnInit {
-  kana = {};
-  keys = [];
+  kana;
   console = window.console;
   Object = Object;
 
@@ -18,8 +17,5 @@ export class KanaTableComponent implements OnInit {
 
   ngOnInit() {
     this.kana = this.kanaTableService.getKanaData();
-    this.keys = Object.keys(this.kana);
-    console.log(this.kana);
-    console.log(this.keys);
   }
 }

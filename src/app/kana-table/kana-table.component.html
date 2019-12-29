@@ -1,6 +1,6 @@
 
 <h3>Kana Table</h3>
-<div class="kana-table" *ngIf="kana | async as table">
+<div class="kana-table" *ngIf="(kana | async) as table">
   <span class="consonant-column"
       *ngFor="let consonant of Object.keys(table).reverse()">
     <span class="vowel-row">{{ consonant }}</span>
