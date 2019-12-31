@@ -9,6 +9,7 @@ import { TopNavComponent } from './top-nav/top-nav.component';
 import { HomeComponent } from './home/home.component';
 import { VocabComponent } from './vocab/vocab.component';
 import { KanaTableComponent } from './kana-table/kana-table.component';
+import { NgVarModule } from './ng-var/ng-var.module';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { KanaTableComponent } from './kana-table/kana-table.component';
       BrowserModule,
       BrowserAnimationsModule,
       AppRoutingModule,
-      HttpClientModule
+      HttpClientModule,
+      NgVarModule,
    ],
    providers: [],
    bootstrap: [
