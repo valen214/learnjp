@@ -2,36 +2,46 @@
     "-": {
         "a": {
             "Seion": {
-                "Katakana": "ア",
+                "hiragana_origin": "安",
+                "katakana_origin": "阿",
                 "Hiragana": "あ",
+                "Katakana": "ア",
                 "Romaji": "a"
             }
         },
         "i": {
             "Seion": {
-                "Katakana": "イ",
+                "hiragana_origin": "以",
+                "katakana_origin": "伊",
                 "Hiragana": "い",
+                "Katakana": "イ",
                 "Romaji": "i"
             }
         },
         "u": {
             "Seion": {
-                "Katakana": "ウ",
+                "hiragana_origin": "宇",
+                "katakana_origin": "宇",
                 "Hiragana": "う",
+                "Katakana": "ウ",
                 "Romaji": "u"
             }
         },
         "e": {
             "Seion": {
-                "Katakana": "エ",
+                "hiragana_origin": "衣",
+                "katakana_origin": "江",
                 "Hiragana": "え",
+                "Katakana": "エ",
                 "Romaji": "e"
             }
         },
         "o": {
             "Seion": {
-                "Katakana": "オ",
+                "hiragana_origin": "於",
+                "katakana_origin": "於",
                 "Hiragana": "お",
+                "Katakana": "オ",
                 "Romaji": "o"
             }
         }
