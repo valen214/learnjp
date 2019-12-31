@@ -2,6 +2,8 @@
 import { Directive, Input, TemplateRef, ViewContainerRef } from '@angular/core';
 
 /**
+ * https://stackoverflow.com/questions/38582293
+ * 
  * Declare a variable in the template.
  * Eg. <i *ngVar="false as variable">{{ variable | json }}</i>
  */

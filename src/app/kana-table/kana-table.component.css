@@ -11,7 +11,7 @@
   align-items: center;
 
   width: 2em;
-  border-left: 1px solid rgba(0, 0, 0, 0.5);
+  border-right: 1px solid rgba(0, 0, 0, 0.5);
   padding: 0 5px;
 }
 
@@ -20,4 +20,10 @@
   align-items: center;
   justify-content: center;
   height: 2em;
+}
+.vowel-row.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  width: 100%;
 }

@@ -3,6 +3,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopNavComponent } from './top-nav/top-nav.component';
@@ -26,6 +28,8 @@ import { NgVarModule } from './ng-var/ng-var.module';
       AppRoutingModule,
       HttpClientModule,
       NgVarModule,
+
+      MatSlideToggleModule,
    ],
    providers: [],
    bootstrap: [

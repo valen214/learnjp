@@ -11,6 +11,10 @@ export class KanaTableComponent implements OnInit {
   console = window.console;
   Object = Object;
 
+  showHiragana = true;
+  showKatakana = true;
+  showRomanji = false;
+
   constructor(
     private kanaTableService: KanaTableService
   ) { }

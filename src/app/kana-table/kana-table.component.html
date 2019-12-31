@@ -1,15 +1,32 @@
 
 <h3>Kana Table</h3>
-<div class="kana-table" *ngVar="(kana | async) as table">
+<mat-slide-toggle
+    [color]="'accent'">
+  show hiragana
+</mat-slide-toggle
+>
+<div class="kana-table" *ngIf="(kana | async) as table">
+  <ng-container *ngVar="['a', 'i', 'u', 'e', 'o'] as aiueo">  
   <span class="consonant-column"
       *ngFor="let consonant of Object.keys(table).reverse()">
     <span class="vowel-row">{{ consonant }}</span>
     <span class="vowel-row"
-        *ngFor="let vowel of 'aiueo'.split('')">
+        *ngFor="let vowel of aiueo">
       <ng-container *ngIf="table[consonant][vowel]?.Seion as entry">
-        {{ entry.Hiragana }}
-        {{ entry.Katakana }}
+        <ng-container *ngIf="showHiragana">{{ entry.Hiragana }}</ng-container>
+        <ng-container *ngIf="showKatakana">{{ entry.Katakana }}</ng-container>
+        <ng-container *ngIf="showRomanji">{{ entry.Romanji }}</ng-container>
       </ng-container>
     </span>
   </span>
+  <span class="consonant-column">
+    <span class="vowel-row">
+      &nbsp;
+    </span>
+    <span class="vowel-row"
+        *ngFor="let text of aiueo">
+      {{ text }}
+    </span>
+  </span>
+  </ng-container>
 </div>
