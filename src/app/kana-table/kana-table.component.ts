@@ -13,7 +13,7 @@ export class KanaTableComponent implements OnInit {
 
   showHiragana = true;
   showKatakana = true;
-  showRomanji = false;
+  showRomaji = false;
 
   constructor(
     private kanaTableService: KanaTableService

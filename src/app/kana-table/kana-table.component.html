@@ -1,10 +1,23 @@
 
 <h3>Kana Table</h3>
 <mat-slide-toggle
+    (change)="showHiragana = !showHiragana"
+    [checked]="showHiragana"
     [color]="'accent'">
   show hiragana
-</mat-slide-toggle
->
+</mat-slide-toggle>
+<mat-slide-toggle
+    (change)="showKatakana = !showKatakana"
+    [checked]="showKatakana"
+    [color]="'accent'">
+  show katakana
+</mat-slide-toggle>
+<mat-slide-toggle
+    (change)="showRomaji = !showRomaji"
+    [checked]="showRomaji"
+    [color]="'accent'">
+  show romaji
+</mat-slide-toggle>
 <div class="kana-table" *ngIf="(kana | async) as table">
   <ng-container *ngVar="['a', 'i', 'u', 'e', 'o'] as aiueo">  
   <span class="consonant-column"
@@ -15,7 +28,7 @@
       <ng-container *ngIf="table[consonant][vowel]?.Seion as entry">
         <ng-container *ngIf="showHiragana">{{ entry.Hiragana }}</ng-container>
         <ng-container *ngIf="showKatakana">{{ entry.Katakana }}</ng-container>
-        <ng-container *ngIf="showRomanji">{{ entry.Romanji }}</ng-container>
+        <ng-container *ngIf="showRomaji">{{ entry.Romaji }}</ng-container>
       </ng-container>
     </span>
   </span>
