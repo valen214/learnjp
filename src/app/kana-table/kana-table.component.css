@@ -2,7 +2,7 @@
 .kana-table {
   width: 100%;
   overflow: auto;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 .consonant-column {
@@ -10,16 +10,17 @@
   flex-direction: column;
   align-items: center;
 
-  width: 2em;
+  width: calc(100% / 11);
   border-right: 1px solid rgba(0, 0, 0, 0.5);
-  padding: 0 5px;
+  padding-bottom: 1em;
 }
 
 .vowel-row {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
-  height: 2em;
+  /* height: 2em; */
+  /* padding-bottom: 1em; */
 }
 .vowel-row.ellipsis {
   overflow: hidden;
